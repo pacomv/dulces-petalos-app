@@ -1,4 +1,4 @@
-import { getPlantById } from "@/api/getPlantById";
+import { getPlantById } from "@/api/services/getPlantById";
 import { PlantCardDetails } from "@/components/PlantCardDetails";
 import {
   Breadcrumb,

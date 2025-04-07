@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
-import { getPlants } from "@/api/getPlants";
 import { PlantCard } from "@/components/PlantCard";
 import { Input } from "@/components/ui/input";
 import { useEffect, useMemo, useState } from "react";
 import { Plant } from "@/models/Plant";
 import { useDebounce } from "@/hooks/useDebounce";
+import { getPlants } from "@/api/services/getPlants";
 
 export const Home = () => {
   const [plants, setPlants] = useState<Plant[]>([]);

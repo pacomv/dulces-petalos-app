@@ -7,7 +7,10 @@ interface Props {
 
 export const PlantCardDetails = ({ plant }: Props) => {
   return (
-    <Card className="w-full sm:w-fit">
+    <Card
+      className="w-full sm:w-fit"
+      style={{ viewTransitionName: `plant-card-${plant?.id}` }}
+    >
       <CardContent>
         <div className="flex flex-col sm:flex-row gap-2 md:gap-4">
           <img

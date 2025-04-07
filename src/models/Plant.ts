@@ -1,3 +1,5 @@
+import { Status } from "@/api/dtos/PlantDto";
+
 export enum FertilizerType {
   PHOSPHORUS = "phosphorus",
   NITROGEN = "nitrogen",
@@ -12,4 +14,5 @@ export interface Plant {
   wateringsPerWeek: number;
   fertilizerType: FertilizerType;
   heightInCm: number;
+  status: Status;
 }
